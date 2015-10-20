@@ -18,6 +18,10 @@ If you don't get why then have a read of [some more thoroughly formed thinking][
 - `git clone git://github.com/DaMouse404/dotfiles ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `./dotfiles.sh`
+- ./vim/vundle-setup.sh
+- ./vim/selecta-setup.sh
+- update gitconfig
+- :PluginInstall
 
 The install task will symlink the appropriate files in `.dotfiles` to your home directory. Everything is configured and tweaked within `~/.dotfiles`, though.
 
