@@ -1,11 +1,11 @@
 [user]
-  name = Christopher Sidebottom
+  name = Tim Pritchard
   email = EMAIL
 [github]
-  user = DaMouse404
+  user = USERNAME
 [core]
-  editor = vim
-  excludesfile = ~/.gitignore
+	editor = vim
+	excludesfile = /root/.gitignore_global
   autocrlf = input
   whitespace = fix,trailing-space,space-before-tab
   quotepath = false
@@ -36,3 +36,9 @@
   prompt = false
 [color]
   ui = auto
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

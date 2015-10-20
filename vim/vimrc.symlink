@@ -29,7 +29,10 @@ Bundle 'tComment'
 Bundle 'airblade/vim-gitgutter'
 
 " Color
-Bundle 'zenburn'
+Bundle 'geoffharcourt/one-dark.vim'
+
+" Tree View
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on     " required!
 
@@ -195,8 +198,12 @@ endif
 " Enable syntax highlighting
 syntax enable
 set t_Co=256
+set number
 set background=dark
-colorscheme zenburn
+colorscheme onedark
+
+" Tree View Activate
+map <C-n> :NERDTreeToggle<CR>
 
 " Overide the colorschemes
 " hi StatusLine ctermbg=darkgrey ctermfg=white
